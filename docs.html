@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+        <title>Docs</title>
+        <link href="https://avatars.githubusercontent.com/u/147589149?v=4" type="x-icon/png" rel="icon">
+        <link href="assets/mdi/css/materialdesignicons.min.css" rel="stylesheet"/>
+        <link href="assets/css/vendor.bundle.base.css" rel="stylesheet"/>
+        <link href="assets/flag-icon-css/css/flag-icon.min.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+<body>
+    <div class="container-scroller">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+                <a class="sidebar-brand brand-logo-mini" href="api/status">
+                    <img alt="UI/UX Design" class="rounded-circle" src="images/309930965bb9b25048bc66bb113685ac.jpg"/>
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item profile">
+                    <div class="profile-desc">
+                        <div class="profile-pic">
+                            <div class="count-indicator">
+                                <img alt="UI/UX Design" class="img-xs rounded-circle" src="images/309930965bb9b25048bc66bb113685ac.jpg"/>
+                                <span class="count bg-success"></span>
+                            </div>
+                            <div class="profile-name">
+                                <h5 class="mb-0 font-weight-normal">Guest</h5>
+                                <span>Online</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-category">
+                    <span class="nav-link">Docs</span>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="/">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-home"></i>
+                        </span>
+                        <span class="menu-title">Home</span>
+                    </a>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a aria-controls="ui-img-maker" aria-expanded="false" class="nav-link" data-toggle="collapse" href="#downloader-submenu">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-download"></i>
+                        </span>
+                        <span class="menu-title">Downloader & Media</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="downloader-submenu">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/drive?url=">Google Drive</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/savepin?url=">SavePin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/savetube?url=&type=">SaveTube</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/tiktok?url=">TikTok</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a aria-controls="ui-img-maker" aria-expanded="false" class="nav-link" data-toggle="collapse" href="#searching-submenu">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-cloud-search"></i>
+                        </span>
+                        <span class="menu-title">Searching</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="searching-submenu">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/bukalapak?query=">Bukalapak</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/gimage?query=">Google Image</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/pinterest?query=">Pinterest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/playstore?query=">Play Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/yts?query=">YouTube Search</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a aria-controls="ui-img-maker" aria-expanded="false" class="nav-link" data-toggle="collapse" href="#ai-submenu">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-console-line"></i>
+                        </span>
+                        <span class="menu-title">Kecerdasan Buatan</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="ai-submenu">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/harilibur">Hari Libur</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/mora?query=&username=">Mora</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/simi?query=">Simi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a aria-controls="ui-img-maker" aria-expanded="false" class="nav-link" data-toggle="collapse" href="#anime-submenu">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-emoticon-tongue"></i>
+                        </span>
+                        <span class="menu-title">Random Anime</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="anime-submenu">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/waifu">Waifu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/neko">Neko</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/shinobu">Shinobu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/megumin">Megumin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a aria-controls="ui-img-maker" aria-expanded="false" class="nav-link" data-toggle="collapse" href="#other-submenu">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-orbit"></i>
+                        </span>
+                        <span class="menu-title">Others</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="other-submenu">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/otakudesu">Otakudesu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kusonime</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Neonime</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a aria-controls="ui-img-maker" aria-expanded="false" class="nav-link" data-toggle="collapse" href="#canvas-submenu">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-pencil"></i>
+                        </span>
+                        <span class="menu-title">Canvas</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="canvas-submenu">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="api/welcome-card?background=&h1=&h2=&h3=&avatar=">Welcome Card</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Coming soon...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-category">
+                    <span class="nav-link">Contact Me</span>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="https://github.com/khaliddesuuu">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-github-circle"></i>
+                        </span>
+                        <span class="menu-title">Github</span>
+                    </a>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="https://wa.me/6285655548594">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-whatsapp"></i>
+                        </span>
+                        <span class="menu-title">WhatsApp</span>
+                    </a>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="https://wa.me/6285655548594">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-star"></i>
+                        </span>
+                        <span class="menu-title">Donasi</span>
+                    </a>
+                </li>
+
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="https://instagram.com/khaliddesu_19">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-instagram"></i>
+                        </span>
+                        <span class="menu-title">Instagram</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="container-fluid page-body-wrapper">
+            <nav class="navbar p-0 fixed-top d-flex flex-row">
+                <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo-mini" href="api/status">
+                            <i class="mdi mdi-dns text-primary"></i>
+                    </a>
+                </div>
+
+                <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+                    <button class="navbar-toggler navbar-toggler align-self-center" data-toggle="minimize" type="button">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item w-100">
+                            <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex">
+                                <input class="form-control" placeholder="Khalid APIs" type="text"/>
+                            </form>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item nav-settings d-none d-lg-block">
+                            <a class="nav-link" href="api/status">
+                                <i class="mdi mdi-view-grid"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown border-left">
+                            <a class="nav-link count-indicator dropdown-toggle" data-toggle="dropdown" href="#" id="notificationDropdown">
+                                <i class="mdi mdi-bell"></i>
+                                <span class="count bg-danger"></span>
+                            </a>
+                            <div aria-labelledby="notificationDropdown" class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list">
+                                <h6 class="p-3 mb-0">Info New Update</h6>
+                                <div class="dropdown-divider"></div>
+                                <!-- Notifikasi 1 (Update Pemeliharaan) -->
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-success rounded-circle">
+                                            <i class="mdi mdi-note-multiple text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <p class="preview-subject mb-1">Maintenance Update</p>
+                                        <p class="text-muted ellipsis mb-0">System maintenance completed successfully</p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- Notifikasi 2 -->
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-primary rounded-circle">
+                                            <i class="mdi mdi-email text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <p class="preview-subject mb-1">New Message</p>
+                                        <p class="text-muted ellipsis mb-0">You have received a new message</p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- Notifikasi 3 -->
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-warning rounded-circle">
+                                            <i class="mdi mdi-alert text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <p class="preview-subject mb-1">System Alert</p>
+                                        <p class="text-muted ellipsis mb-0">Server is running at high load</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" data-toggle="dropdown" href="api/status" id="profileDropdown">
+                                <div class="navbar-profile">
+                                    <img alt="UI/UX Design" class="img-xs rounded-circle" src="images/309930965bb9b25048bc66bb113685ac.jpg"/>
+                                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Khalid</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" data-toggle="offcanvas" type="button">
+                        <span class="mdi mdi-format-line-spacing"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger">Users Online</h5>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0" id="users-online">Waiting...</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-account icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">User in 30 Minutes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger">Platform Servers</h5>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0" id="platform-server">Waiting...</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-chip icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">Platforms used</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger">RAM Server</h5>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0" id="memory-info">Waiting...</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-server icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">Status RAM Servers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger">Disk Server Info</h5>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0" id="disk-info">Waiting...</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-database icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">Status Disk Servers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger">Server Status</h5>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0" id="server-status">Waiting...</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-cloud-check icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">Status Servers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger">IP Address</h5>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0" id="ip">Waiting...</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-access-point-network icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">Your IP Address</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold text-info">Your Battery</h6>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <span id="batteryLevel"></span>
+                                                <h3 class="mb-0" id="percentageLevel">Waiting...</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-battery-positive"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">Percentase Your Battery</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="font-weight-bold text-info">Date</h5>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h4 class="mb-0" id="tanggal">Waiting...</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-calendar icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">Date Now</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="font-weight-bold text-success">Clock</h5>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h4 class="mb-0" id="Clock">Waiting...</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-clock icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal" id="ucapanWaktu">ucapanWaktu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold text-info">Hitung Mundur</h6>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h5 class="mb-0" id="mundur">Waiting...</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-star icon-item"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted font-weight-normal">Menuju Tahun baru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="mt-3 btn btn-outline-danger bg-transparent">
+                                        <div class="alert btn btn-outline-danger" id="demo" role="alert">
+                                            <span id="statistics">Waiting...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="footer">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <div class="bg-dark btn btn-block btn-outline-danger">
+                                <p class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2021-<span id="tahun"></span> @api.khaliddesu.my.id</p>
+                            </div>
+                        </div>
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script>
+    fetch('/api/servers').then(response => response.json()).then(data => {
+      document.getElementById('users-online').textContent = data.users;
+      document.getElementById('platform-server').textContent = data.platform;
+      document.getElementById('memory-info').textContent = data.memory;
+      document.getElementById('disk-info').textContent = data.disk;
+      document.getElementById('server-status').textContent = data.status;
+    }).catch(error => {
+      console.error('Error fetching data:', error);
+    });
+  </script>
+<script src="assets/js/vendor.bundle.base.js"></script>
+<script src="js/off-canvas.js"></script>
+<script src="js/hoverable-collapse.js"></script>
+<script src="js/misc.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/todolist.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
